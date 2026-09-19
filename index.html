@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pappi Da Dhaba | North Indian food in Bahadurgarh</title>
+<meta name="description" content="Pappi Da Dhaba serves North Indian food in Bahadurgarh: Shahi Paneer, Desi Ghee Dal Fry, Matar Mushroom and fresh naan. Dine in, take away or order home delivery on WhatsApp.">
+<meta name="theme-color" content="#FFC61A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Pappi Da Dhaba","servesCuisine":"North Indian","priceRange":"₹200–400","telephone":"+919050502625","address":{"@type":"PostalAddress","streetAddress":"Opposite Metro Pillar No 842, Old Bus Stand, Dharampura","addressLocality":"Bahadurgarh","addressRegion":"Haryana","postalCode":"124507","addressCountry":"IN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"3.8","reviewCount":"460"}}
+</script>
+<style>
+:root{
+  --bg:#FFFCF2; --surface:#FFFFFF; --ink:#1B1408; --muted:#5E5443; --line:#E4D9BD;
+  --sign:#FFC61A; --sign-red:#A3141C; --red:#C8202A; --wa:#0F7A40;
+  --green:#0E3B2E; --on-green:#FFF3C9; --focus:#1A56DB;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13100A; --surface:#1D1A11; --ink:#F6EFDC; --muted:#B9AE95; --line:#3A3523; --focus:#8AB4FF;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13100A; --surface:#1D1A11; --ink:#F6EFDC; --muted:#B9AE95; --line:#3A3523; --focus:#8AB4FF;
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Mukta","Noto Sans Devanagari",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.wrap{width:min(1100px, 100% - 2.5rem);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:50}
+.skip:focus{left:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.6rem 1.3rem;border-radius:12px;border:2px solid transparent;font:700 1rem/1.2 "Mukta",system-ui,sans-serif;text-decoration:none;cursor:pointer;text-align:center}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{filter:brightness(1.1)}
+.btn-ink{background:#1B1408;color:var(--sign)}
+.btn-ink:hover{background:#000}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--bg)}
+
+/* Header */
+.top{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
+.brand{font:400 1.35rem/1 "Yatra One",Georgia,"Noto Serif Devanagari",serif;text-decoration:none}
+.nav{display:flex;align-items:center;gap:1.5rem}
+.nav a.link{text-decoration:none;font-weight:600}
+.nav a.link:hover{text-decoration:underline;text-underline-offset:4px}
+.top .btn{min-height:44px;padding:.4rem 1.05rem}
+@media (max-width:640px){.nav a.link{display:none}}
+
+/* Hero: hand-painted signboard on turmeric yellow */
+.hero{--ink:#1B1408;--muted:#4A3D1E;background:var(--sign);color:var(--ink);padding-top:clamp(1.5rem,4vw,2.75rem)}
+.sign{position:relative;background:var(--sign-red);color:var(--on-green);border-radius:18px;padding:clamp(1.75rem,4.5vw,3.25rem);box-shadow:0 0 0 4px var(--ink)}
+.sign::before{content:"";position:absolute;inset:10px;border:2px dashed var(--sign);border-radius:10px;pointer-events:none}
+.sign-place{position:relative;margin:0 0 .6rem;color:#FFE38A}
+.sign h1{position:relative;margin:0;font-weight:400}
+.sign .hi{display:block;font:400 clamp(3.1rem,11vw,7.5rem)/1.2 "Yatra One","Noto Serif Devanagari",Georgia,serif;color:var(--sign)}
+.sign .en{display:block;margin-top:.15rem;font:400 clamp(1.6rem,4vw,2.6rem)/1.2 "Yatra One",Georgia,serif;color:var(--on-green)}
+.sign-tag{position:relative;max-width:34rem;margin:1.1rem 0 0;font-size:1.15rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.75rem 0 0}
+.facts{list-style:none;margin:0;padding:2rem 0 2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.25rem}
+.fact{border-left:4px solid var(--ink);padding-left:.9rem}
+.fact strong{display:block;font:400 1.5rem/1.25 "Yatra One",Georgia,serif}
+.fact span{color:var(--muted)}
+.stripe{height:14px;background:repeating-linear-gradient(90deg,var(--sign-red) 0 28px,#1B1408 28px 56px,var(--on-green) 56px 84px)}
+@media (max-width:560px){
+  .actions{display:grid;grid-template-columns:1fr 1fr}
+  .actions .btn:first-child{grid-column:1 / -1}
+}
+
+/* Sections */
+.section{padding:clamp(2.75rem,7vw,5rem) 0}
+h2{margin:0 0 .5rem;font:400 clamp(2rem,5vw,3rem)/1.2 "Yatra One",Georgia,"Noto Serif Devanagari",serif}
+.lede{max-width:38rem;margin:0 0 2.25rem;color:var(--muted)}
+
+/* Menu */
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2.5rem 3.5rem}
+.group h3{margin:0 0 .4rem;padding-bottom:.5rem;border-bottom:3px solid var(--red);font:400 1.5rem/1.2 "Yatra One",Georgia,serif}
+.items{list-style:none;margin:0;padding:0}
+.item{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.item-name{font-weight:600}
+.item-price{display:block;color:var(--muted);font-size:.95rem}
+.badge{display:inline-block;margin-left:.55rem;padding:.05rem .6rem;border-radius:999px;background:var(--sign);color:#1B1408;font-size:.8rem;font-weight:700;vertical-align:.1em}
+.add{min-height:44px;min-width:78px;padding:0 1rem;border-radius:10px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:700 1rem/1 "Mukta",system-ui,sans-serif;cursor:pointer}
+.add:hover{background:var(--ink);color:var(--bg)}
+.stepper{display:inline-flex;align-items:center;border:2px solid var(--ink);border-radius:10px;overflow:hidden}
+.stepper button{width:44px;height:40px;border:0;background:transparent;color:var(--ink);font:700 1.3rem/1 "Mukta",system-ui,sans-serif;cursor:pointer}
+.stepper button:hover{background:var(--line)}
+.stepper .qty{min-width:2rem;text-align:center;font-weight:700}
+
+/* Order */
+.order{--focus:#FFD84D;background:var(--green);color:var(--on-green)}
+.order h2{color:var(--on-green)}
+.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem 3.5rem;align-items:start}
+@media (max-width:800px){.order-grid{grid-template-columns:1fr}}
+.cart-empty{margin:1rem 0;opacity:.9}
+.cart-list{list-style:none;margin:1rem 0 0;padding:0}
+.cart-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.6rem 0;border-bottom:1px solid rgba(255,243,201,.28)}
+.cart-total{margin:.9rem 0 0;font-weight:700;font-size:1.15rem}
+.order .stepper{border-color:var(--on-green)}
+.order .stepper button{color:var(--on-green)}
+.order .stepper button:hover{background:rgba(255,243,201,.16)}
+fieldset{border:0;margin:0 0 1.1rem;padding:0}
+legend{padding:0;margin-bottom:.2rem;font-weight:600}
+.choice{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;margin-right:1.4rem;cursor:pointer}
+.choice input{width:1.15rem;height:1.15rem;accent-color:var(--sign)}
+.field{display:block;margin:0 0 1rem}
+.field span{display:block;margin-bottom:.3rem;font-weight:600}
+.field input,.field textarea{width:100%;padding:.7rem .85rem;border-radius:10px;border:2px solid transparent;background:#FFFDF5;color:#1B1408;font:400 1rem/1.4 "Mukta",system-ui,sans-serif}
+.field textarea{min-height:5.2rem;resize:vertical}
+.form-msg{min-height:1.6rem;margin:0 0 .6rem;font-weight:700;color:#FFD84D}
+.order .btn-wa{background:#19A45B;color:#04180E;width:100%}
+.order .btn-wa:hover{filter:brightness(1.08)}
+.fine{margin:.8rem 0 0;font-size:.95rem;opacity:.9}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem 3.5rem;align-items:start}
+@media (max-width:800px){.visit-grid{grid-template-columns:1fr}}
+.addr{margin:1rem 0 1.5rem;font-size:1.25rem;font-style:normal;line-height:1.5}
+.buttons{display:flex;flex-wrap:wrap;gap:.75rem}
+.details{list-style:none;margin:0;padding:0}
+.details li{display:flex;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.details b{flex:0 0 8rem}
+@media (max-width:480px){.details li{flex-direction:column;gap:.1rem}.details b{flex:none}}
+
+/* Reviews */
+.reviews{background:var(--surface);border-block:1px solid var(--line)}
+.rev-grid{display:grid;grid-template-columns:auto 1fr;gap:2rem 3.5rem;align-items:center}
+@media (max-width:700px){.rev-grid{grid-template-columns:1fr}}
+.score{font:400 clamp(4rem,10vw,6rem)/1 "Yatra One",Georgia,serif;color:var(--red)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .score{color:#FF7A6E}}
+:root[data-theme="dark"] .score{color:#FF7A6E}
+.score-note{margin:.4rem 0 0;color:var(--muted)}
+blockquote{margin:0 0 1.25rem;font-size:clamp(1.3rem,3vw,1.7rem);line-height:1.45;max-width:36rem}
+.who{display:block;margin-top:.5rem;font-size:1rem;color:var(--muted)}
+
+/* Footer */
+.foot{background:#1B1408;color:#F6EFDC;padding:2.5rem 0}
+.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
+.foot .brand{display:block;margin-bottom:.4rem}
+.foot p{margin:0;max-width:28rem;color:#D9CFB6}
+.foot a{color:#FFC61A}
+.copy{margin-top:1.75rem;font-size:.9rem;color:#B9AE95}
+
+/* Floating order bar */
+.cartbar{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:20;padding:.85rem 1.4rem;border-radius:999px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.3);white-space:nowrap}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important;animation:none !important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#menu">Skip to menu</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top">Pappi Da Dhaba</a>
+    <nav class="nav" aria-label="Main">
+      <a class="link" href="#menu">Menu</a>
+      <a class="link" href="#visit">Find us</a>
+      <a class="link" href="#reviews">Reviews</a>
+      <a class="btn btn-wa" id="top-order" href="#order">Order</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Pappi Da Dhaba">
+    <div class="wrap">
+      <div class="sign">
+        <p class="sign-place">Old Bus Stand, Dharampura, Bahadurgarh</p>
+        <h1><span class="hi" lang="hi">पप्पी दा ढाबा</span><span class="en">Pappi Da Dhaba</span></h1>
+        <p class="sign-tag">North Indian food, best known for naan and paneer dishes. Eat with us, take it away, or get it delivered.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-ink" href="#menu">Order from the menu</a>
+        <a class="btn btn-line" href="https://wa.me/919050502625?text=Hi%20Pappi%20Da%20Dhaba" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="tel:+919050502625">Call 090505 02625</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Pappi+Da+Dhaba+Old+Bus+Stand+Bahadurgarh" target="_blank" rel="noopener">Directions</a>
+      </div>
+      <ul class="facts">
+        <li class="fact"><strong>Open until 12 am</strong><span>Closing time</span></li>
+        <li class="fact"><strong>₹200–400</strong><span>Per person</span></li>
+        <li class="fact"><strong>Three ways to eat</strong><span>Dine in, takeaway, home delivery</span></li>
+      </ul>
+    </div>
+    <div class="stripe" aria-hidden="true"></div>
+  </section>
+
+  <section class="section wrap" id="menu" aria-labelledby="menu-h">
+    <h2 id="menu-h">Menu</h2>
+    <p class="lede">Tap Add on what you want. We confirm prices and delivery time with you on WhatsApp.</p>
+    <div class="groups" id="menu-groups" data-scope="menu"></div>
+  </section>
+
+  <section class="section order" id="order" aria-labelledby="order-h">
+    <div class="wrap order-grid">
+      <div data-scope="cart">
+        <h2 id="order-h" tabindex="-1">Your order</h2>
+        <p class="cart-empty" id="cart-empty">Nothing added yet. Pick dishes from the menu above.</p>
+        <ul class="cart-list" id="cart-list"></ul>
+        <p class="cart-total" id="cart-total"></p>
+      </div>
+      <div>
+        <fieldset>
+          <legend>How do you want it?</legend>
+          <label class="choice"><input type="radio" name="otype" value="delivery" checked> Home delivery</label>
+          <label class="choice"><input type="radio" name="otype" value="takeaway"> Takeaway</label>
+        </fieldset>
+        <label class="field"><span>Your name</span><input id="f-name" type="text" autocomplete="name"></label>
+        <label class="field" id="addr-wrap"><span>Delivery address</span><textarea id="f-addr" autocomplete="street-address"></textarea></label>
+        <label class="field"><span>Notes (optional)</span><textarea id="f-notes" placeholder="Less spicy, extra roti, no onion"></textarea></label>
+        <p class="form-msg" id="form-msg" role="alert"></p>
+        <a class="btn btn-wa" id="send" href="#order" target="_blank" rel="noopener">Send order on WhatsApp</a>
+        <p class="fine">This opens WhatsApp with your order ready to send. Nothing is placed until we reply.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="visit" aria-labelledby="visit-h">
+    <div class="visit-grid">
+      <div>
+        <h2 id="visit-h">Find us</h2>
+        <address class="addr">Opposite Metro Pillar No. 842,<br>Old Bus Stand, Dharampura,<br>Bahadurgarh, Haryana 124507</address>
+        <div class="buttons">
+          <a class="btn btn-ink" href="https://www.google.com/maps/search/?api=1&amp;query=Pappi+Da+Dhaba+Old+Bus+Stand+Bahadurgarh" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-line" href="tel:+919050502625">Call 090505 02625</a>
+          <a class="btn btn-wa" href="https://wa.me/919050502625?text=Hi%20Pappi%20Da%20Dhaba" target="_blank" rel="noopener">WhatsApp us</a>
+        </div>
+      </div>
+      <ul class="details">
+        <li><b>Hours</b><span>Open until 12 am</span></li>
+        <li><b>Dining</b><span>Indoor dining, takeaway and home delivery</span></li>
+        <li><b>Food</b><span>North Indian, all you can eat, vegan options available</span></li>
+        <li><b>Reservations</b><span>We don't take reservations. Walk in.</span></li>
+        <li><b>Usual visit</b><span>About 20 minutes, and there is usually no wait</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-h">
+    <div class="wrap rev-grid">
+      <div>
+        <div class="score" aria-hidden="true">3.8</div>
+        <p class="score-note"><span class="sr">Rated 3.8 out of 5, </span>out of 5 from 460 Google reviews</p>
+      </div>
+      <div>
+        <h2 class="sr" id="reviews-h">Reviews</h2>
+        <blockquote>
+          The food is super tasty, nicely packed and has great quantity too.
+          <span class="who">A Google review</span>
+        </blockquote>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Pappi+Da+Dhaba+Old+Bus+Stand+Bahadurgarh" target="_blank" rel="noopener">Rate us on Google</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <span class="brand">Pappi Da Dhaba</span>
+        <p>Opposite Metro Pillar No. 842, Old Bus Stand, Dharampura, Bahadurgarh, Haryana 124507</p>
+      </div>
+      <div>
+        <p><a href="tel:+919050502625">090505 02625</a><br>Call or WhatsApp</p>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year">2026</span> Pappi Da Dhaba</p>
+  </div>
+</footer>
+
+<a class="cartbar" id="cartbar" href="#order" hidden>View order</a>
+<p class="sr" id="status" role="status"></p>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---- Edit this part to change your details and menu ---- */
+  var SHOP = { name: 'Pappi Da Dhaba', whatsapp: '919050502625' };
+  // Add a price to any item, for example price: 180, and it shows on the menu.
+  // When every item in an order has a price, the order total shows too.
+  var MENU = [
+    { group: 'Paneer and sabzi', items: [
+      { id: 'shahi-paneer',   name: 'Shahi Paneer',   popular: true, price: null },
+      { id: 'matar-mushroom', name: 'Matar Mushroom', popular: true, price: null },
+      { id: 'baingan-bharta', name: 'Baingan Bharta', price: null }
+    ]},
+    { group: 'Dal and sides', items: [
+      { id: 'dal-fry',  name: 'Desi Ghee Dal Fry', popular: true, price: null },
+      { id: 'dahi-fry', name: 'Dahi Fry',          price: null }
+    ]},
+    { group: 'Breads', items: [
+      { id: 'naan',         name: 'Naan',                  price: null },
+      { id: 'aloo-paratha', name: 'Aloo Paratha',          price: null },
+      { id: 'roti',         name: 'Plain Roti (2 pieces)', price: null }
+    ]}
+  ];
+  /* -------------------------------------------------------- */
+
+  var cart = {};
+  var byId = {};
+  MENU.forEach(function (g) { g.items.forEach(function (i) { byId[i.id] = i; }); });
+
+  var $ = function (id) { return document.getElementById(id); };
+  var menuEl = $('menu-groups'), cartList = $('cart-list'), emptyEl = $('cart-empty'),
+      totalEl = $('cart-total'), topOrder = $('top-order'), bar = $('cartbar'),
+      status = $('status'), msg = $('form-msg'), send = $('send'),
+      addrWrap = $('addr-wrap'), orderSection = $('order');
+  var orderVisible = false, count = 0;
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function money(n) { return '\u20B9' + Number(n).toLocaleString('en-IN'); }
+
+  function ctl(id, label) {
+    var q = cart[id] || 0, l = esc(label);
+    if (!q) {
+      return '<button class="add" type="button" data-action="add" data-id="' + id + '" aria-label="Add ' + l + '">Add</button>';
+    }
+    return '<div class="stepper" role="group" aria-label="' + l + ' quantity">' +
+      '<button type="button" data-action="dec" data-id="' + id + '" aria-label="Remove one ' + l + '">\u2212</button>' +
+      '<span class="qty">' + q + '</span>' +
+      '<button type="button" data-action="inc" data-id="' + id + '" aria-label="Add one ' + l + '">+</button></div>';
+  }
+
+  function entries() {
+    return Object.keys(cart).filter(function (id) { return cart[id] > 0; })
+      .map(function (id) { return { item: byId[id], qty: cart[id] }; });
+  }
+  function total(list) {
+    if (!list.length) return null;
+    for (var i = 0; i < list.length; i++) if (list[i].item.price == null) return null;
+    return list.reduce(function (s, x) { return s + x.item.price * x.qty; }, 0);
+  }
+
+  function renderMenu() {
+    menuEl.innerHTML = MENU.map(function (g) {
+      return '<div class="group"><h3>' + esc(g.group) + '</h3><ul class="items">' +
+        g.items.map(function (i) {
+          return '<li class="item"><div><span class="item-name">' + esc(i.name) + '</span>' +
+            (i.popular ? '<span class="badge">Popular</span>' : '') +
+            (i.price != null ? '<span class="item-price">' + money(i.price) + '</span>' : '') +
+            '</div><div>' + ctl(i.id, i.name) + '</div></li>';
+        }).join('') + '</ul></div>';
+    }).join('');
+  }
+
+  function renderBar() {
+    bar.hidden = !(count > 0) || orderVisible;
+  }
+
+  function renderCart() {
+    var list = entries(), t = total(list);
+    count = list.reduce(function (s, x) { return s + x.qty; }, 0);
+    emptyEl.hidden = list.length > 0;
+    cartList.innerHTML = list.map(function (x) {
+      return '<li class="cart-row"><span>' + esc(x.item.name) + '</span>' + ctl(x.item.id, x.item.name) + '</li>';
+    }).join('');
+    totalEl.textContent = t != null ? 'Total ' + money(t) : '';
+    topOrder.textContent = count ? 'Order (' + count + ')' : 'Order';
+    bar.textContent = 'View order (' + count + (count === 1 ? ' item)' : ' items)');
+    status.textContent = count ? count + (count === 1 ? ' item' : ' items') + ' in your order' : 'Your order is empty';
+    renderBar();
+  }
+
+  function renderAll() { renderMenu(); renderCart(); }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-action]');
+    if (!b) return;
+    var id = b.dataset.id, act = b.dataset.action, scopeEl = b.closest('[data-scope]');
+    var scope = scopeEl ? scopeEl.dataset.scope : 'menu';
+    if (act === 'add' || act === 'inc') cart[id] = (cart[id] || 0) + 1;
+    if (act === 'dec') cart[id] = Math.max(0, (cart[id] || 0) - 1);
+    msg.textContent = '';
+    renderAll();
+    var root = document.querySelector('[data-scope="' + scope + '"]');
+    var el = root.querySelector('[data-id="' + id + '"][data-action="inc"]') ||
+             root.querySelector('[data-id="' + id + '"][data-action="add"]');
+    if (el) el.focus();
+    else if (scope === 'cart') $('order-h').focus();
+  });
+
+  function orderType() {
+    return document.querySelector('input[name="otype"]:checked').value;
+  }
+  document.querySelectorAll('input[name="otype"]').forEach(function (r) {
+    r.addEventListener('change', function () {
+      addrWrap.hidden = orderType() !== 'delivery';
+      msg.textContent = '';
+    });
+  });
+
+  function validate() {
+    if (!entries().length) return 'Add at least one dish from the menu.';
+    if (!$('f-name').value.trim()) { $('f-name').focus(); return 'Enter your name.'; }
+    if (orderType() === 'delivery' && !$('f-addr').value.trim()) { $('f-addr').focus(); return 'Enter your delivery address.'; }
+    return '';
+  }
+
+  function buildLink() {
+    var list = entries(), t = total(list);
+    var lines = ['Hi ' + SHOP.name + ', I would like to order:', ''];
+    list.forEach(function (x) { lines.push('- ' + x.item.name + ' x ' + x.qty); });
+    lines.push('');
+    if (t != null) lines.push('Total: ' + money(t));
+    lines.push('Order type: ' + (orderType() === 'delivery' ? 'Home delivery' : 'Takeaway'));
+    lines.push('Name: ' + $('f-name').value.trim());
+    if (orderType() === 'delivery') lines.push('Address: ' + $('f-addr').value.trim());
+    var notes = $('f-notes').value.trim();
+    if (notes) lines.push('Notes: ' + notes);
+    return 'https://wa.me/' + SHOP.whatsapp + '?text=' + encodeURIComponent(lines.join('\n'));
+  }
+
+  send.addEventListener('click', function (e) {
+    var err = validate();
+    if (err) { e.preventDefault(); msg.textContent = err; return; }
+    msg.textContent = '';
+    send.href = buildLink();
+  });
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) {
+      orderVisible = es[0].isIntersecting;
+      renderBar();
+    }, { threshold: 0.15 }).observe(orderSection);
+  }
+
+  $('year').textContent = new Date().getFullYear();
+  renderAll();
+})();
+</script>
+</body>
+</html>
